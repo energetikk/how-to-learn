@@ -1,3 +1,7 @@
+body {
+  padding: 0;
+  margin: 0;
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -7,6 +11,7 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+
 }
 
 .header {
@@ -14,12 +19,67 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  background: #f2f2f2;
+  position: relative;
+
+}
+
+.logo {
+  width: 228px;
+  height: 32px;
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  font-size: 102px;
+  font-weight: 600;
+  line-height: 96px;
+  width: 730px;
+  height: 100%;
+  margin: 0;
+  margin-left: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.header__subtitle {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  right: 0;
+  top: 64px;
+
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -29,3 +89,121 @@
   margin-right: 0;
   margin-top: 80px;
 }
+
+.description {
+  display: flex;
+  /* align-items: center; */
+
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 0;
+  margin: 100px auto;
+  background: aquamarine;
+  list-style: none;
+
+}
+
+.two-columns__brief {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #2f80ed;
+  width: 175px;
+
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  margin: 0;
+  padding: 0;
+
+}
+
+h3 {
+  margin: 0;
+}
+
+.two-columns__paragraph {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  margin: 0;
+  margin-bottom: 30px;
+  /* padding: 0; */
+}
+
+.two-columns__span-accept {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+/* Слайд цифры и факты */
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+  background-color: aqua;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 600;
+
+}
+
+.section-subtitle {
+  text-align: center;
+  width: 60%;
+  background-color: aqua;
+  margin: 20px auto 60px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.table {
+  display: flex;
+  list-style: none;
+  width: 1100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.table__cell {
+  width: 250px;
+  background: #2f80ed;
+  margin-bottom: 60px;
+
+}
+
+.table__heading {
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.table__text {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+
+
