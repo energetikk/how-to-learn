@@ -4,19 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
   <div class="page">
     <header class="header">
 	    <img class="logo logo_place_header" src="./images/logo_place_header.svg" alt="Logo yandex">
-	    <p class="header__title">Научиться учиться</p>
-	    <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
+
+	    <h3 class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
 		  <a href="#" class="header__link">Узнать&rarr;</a>
-	    </p>
+      </h3>
 	    <img class="header__main-illustration" src="./images/header-image.png" alt="image-header">
 	    <div class="header__square-pic"></div>
+      <h1 class="header__title">Научиться учиться</h1>
     </header>
     <main class="content">
       <section class="description">
@@ -31,8 +32,8 @@
       </section>
 
       <section class="digits">
-        <div class="flex-column">
-          <h1 class="section-title">Цифры и факты</h1>
+        <!-- <div class="flex-column"> -->
+          <h2 class="section-title">Цифры и факты</h2>
           <h3 class="section-subtitle">Про учёбу и мозг</h3>
           <ul class="table">
             <li class="table__cell"><div class="table__heading">86 миллиардов</div><div class="table__text">Число нейронов в мозге человека</div></li>
@@ -45,17 +46,58 @@
             <li class="table__cell"><div class="table__heading">1885 год</div><div class="table__text">Открытие кривой забывания</div></li>
             <li class="table__cell"><div class="table__heading">1889 год</div><div class="table__text">Открытие условного рефлекса</div></li>
           </ul>
-        </div>
+        <!-- </div> -->
       </section>
 
       <section class="feynman">
-      </section>
+        <h1 class="feynman__title">Метод Фейнмана</h1>
+        <h1 class="feynman__subtitle">Выучить и не забыть.</h1>
+        <a class="feynman__link" href="#">Подробнее&rarr;</a>
+        </section>
 
       <section class="kaufman">
+        <!-- <div class="flex-column"> -->
+          <h1 class="section-title section-title_theme_dark">Принципы обучения</h1>
+          <h3 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h3>
+          <ul class="table table_theme_dark">
+            <li class="table__cell table__cell_theme_dark"><div class="table__heading">1</div><div class="table__text table__text_theme_dark">Выберите привлекательный проект.</div></li>
+            <li class="table__cell table__cell_theme_dark"><div class="table__heading">2</div><div class="table__text table__text_theme_dark">Сосредоточьтесь на каком-то одном навыке.</div></li>
+            <li class="table__cell table__cell_theme_dark"><div class="table__heading">3</div><div class="table__text table__text_theme_dark">Определите целевой уровень мастерства.</div></li>
+            <li class="table__cell table__cell_theme_dark"><div class="table__heading">4</div><div class="table__text table__text_theme_dark">Разбейте навык на элементы.</div></li>
+            <li class="table__cell table__cell_theme_dark"><div class="table__heading">5</div><div class="table__text table__text_theme_dark">Приготовьте всё необходимое для занятий.</div></li>
+            <li class="table__cell table__cell_theme_dark"><div class="table__heading">6</div><div class="table__text table__text_theme_dark">Устраните препятствия для занятий.</div></li>
+            <li class="table__cell table__cell_theme_dark"><div class="table__heading">7</div><div class="table__text table__text_theme_dark">Выделите специальное время для занятий.</div></li>
+            <li class="table__cell table__cell_theme_dark"><div class="table__heading">8</div><div class="table__text table__text_theme_dark">Создайте быстрые петли обратной связи.</div></li>
+            <li class="table__cell table__cell_theme_dark"><div class="table__heading">9</div><div class="table__text table__text_theme_dark">Занимайтесь по расписанию, короткими интенсивными интервалами.</div></li>
+            <li class="table__cell table__cell_theme_dark"><div class="table__heading">10</div><div class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</div></li>
+          </ul>
+          <img class="kaufman__triangle" src="./images/kaufman-triangle.svg" alt="Треугольник">
+        <!-- </div> -->
+
       </section>
     </main>
     <footer class="footer">
+      <div class="footer__columns">
+        <div class="footer__column_content_copyright">
+          <img class="logo logo_place_footer" src="./images/logo_place_footer.svg" alt="логотип яндекс.практикум">
+          <h2 class="footer__author">&copy;Виктор Абанькин</h2>
+        </div>
 
+        <nav class="footer__column_content_info">
+          <h2 class="footer__column-heading">О Практикуме</h2>
+          <nav class="footer__column-links">
+            <a class="footer__column-link" href="#">Главная</a>
+            <a class="footer__column-link" href="#">Концепция</a>
+            <a class="footer__column-link" href="#">Наставники</a>
+          </nav>
+        </nav>
+        <div class="footer__column_content_social">
+          <h2 class="footer__column-heading">Соцсети</h2>
+          <a class="footer__column-link" href="#"><img src="./images/youtube-icon.svg" alt="Логотип Youtube" class="footer__social-icon">Youtube</a>
+          <a class="footer__column-link" href="#"><img src="./images/vk_color_white.svg" alt="Логотип VK" class="footer__social-icon">ВКонтакте</a>
+          <a class="footer__column-link" href="#"><img src="./images/tiktok-icon.svg" alt="Логотип Tik-Tok" class="footer__social-icon">Tik-Tok</a>
+        </div>
+      </div>
     </footer>
   </div>
 </body>
