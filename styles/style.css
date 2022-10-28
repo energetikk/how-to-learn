@@ -76,22 +76,12 @@
   position: absolute;
   right: 0;
   top: 64px;
-
-}
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
 }
 
 /* -------Секция description--------  */
 
 .description {
   display: flex;
-  /* align-items: center; */
   margin: 100px auto;
 }
 
@@ -103,7 +93,6 @@
   margin: 100px auto;
   /* background: aquamarine; */
   list-style: none;
-
 }
 
 .two-columns__brief {
@@ -114,7 +103,6 @@
   line-height: 1.2;
   color: #2f80ed;
   width: 175px;
-
 }
 
 .two-columns__main-text {
@@ -125,17 +113,12 @@
 
 }
 
-h3 {
-  /* margin: 0; */
-}
-
 .two-columns__paragraph {
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
   margin: 0;
   margin-bottom: 30px;
-  /* padding: 0; */
 }
 
 .two-columns__span-accept {
@@ -157,17 +140,14 @@ h3 {
   text-align: center;
   margin: 0 auto;
   width: 60%;
-  /* background-color: aqua; */
   font-size: 60px;
   line-height: 1.15;
   font-weight: 600;
-
 }
 
 .section-subtitle {
   text-align: center;
   width: 60%;
-  /* background-color: aqua; */
   margin: 20px auto 60px;
   font-size: 24px;
   line-height: 34px;
@@ -186,15 +166,13 @@ h3 {
 
 .table__cell {
   width: 250px;
-  /* background: #2f80ed; */
-  /* margin-bottom: 60px; */
-
 }
 
 .table__cell:nth-child(-n+4) {
   margin-bottom: 60px;
 }
-  .table__heading {
+
+.table__heading {
   font-size: 24px;
   line-height: 1.15;
   font-weight: 600;
@@ -212,6 +190,7 @@ h3 {
 /* ---------Секция Метод Фейнмана-------- */
 
 .feynman {
+  background-color: #f2f2f2;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -219,7 +198,6 @@ h3 {
   background-image: url(../images/feynman.png);
   background-repeat: no-repeat;
   background-position: left bottom;
-  /* background-color: antiquewhite; */
   background-size: 867px 637px;
   position: relative;
   margin: 0;
@@ -232,10 +210,8 @@ h3 {
   font-size: 120px;
   font-weight: 600;
   line-height: 1.15;
-  /* background-color: aqua; */
   margin: 100px 0 0;
   padding: 0;
-  /* margin-top: 100px; */
 }
 
 .feynman__subtitle {
@@ -264,16 +240,14 @@ h3 {
   position: relative;
   z-index: 1;
   padding: 90px 0 90px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-
 }
+
 .section-title_theme_dark {
   color: white;
-  /* padding-top: 90px; */
 }
 
 .section-subtitle_theme_dark {
@@ -284,13 +258,11 @@ h3 {
 .table_theme_dark {
   flex-wrap: wrap;
   justify-content: space-between;
-
-  /* background-color: antiquewhite; */
-  /* padding-bottom: 90px; */
 }
 
 .table__cell_theme_dark {
   width: 200px;
+  color: white;
   margin: 0;
 }
 
