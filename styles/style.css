@@ -91,7 +91,6 @@
   width: 80%;
   padding: 0;
   margin: 100px auto;
-  /* background: aquamarine; */
   list-style: none;
 }
 
@@ -110,7 +109,6 @@
   min-width: 784px;
   margin: 0;
   padding: 0;
-
 }
 
 .two-columns__paragraph {
@@ -119,6 +117,10 @@
   line-height: 34px;
   margin: 0;
   margin-bottom: 30px;
+}
+
+.two-columns__paragraph:last-of-type {
+  margin: 0;
 }
 
 .two-columns__span-accept {
@@ -184,7 +186,6 @@
   line-height: 1.2;
   font-weight: normal;
   margin-top: 20px;
-  margin-bottom: 0;
 }
 
 /* ---------Секция Метод Фейнмана-------- */
@@ -194,7 +195,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 890px;
+  min-height: 890px;
   background-image: url(../images/feynman.png);
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -271,6 +272,7 @@
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
   position: absolute;
@@ -284,22 +286,27 @@
 
 .footer {
   background-color: #1f1f1f;
+  box-sizing: border-box;
+  min-height: 350px;
   padding: 60px 0 40px;
 }
 
 .footer__columns {
   display: flex;
   width: 90%;
-  min-height: 350px;
+  min-height: 250px;
   margin: 0 auto;
   justify-content: space-between;
   color: white;
 }
 
-.footer__column_content_copyright {
-  flex-basis: 711px;
+.footer__column {
   display: flex;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
   justify-content: space-between;
 }
 
@@ -315,11 +322,6 @@
   line-height: 25px;
 }
 
-.footer__column_content_info {
-  display: flex;
-  flex-direction: column;
-}
-
 .footer__column-heading {
   display: flex;
   font-size: 18px;
@@ -333,6 +335,7 @@
   padding: 0;
   list-style: none;
   margin-top: 0;
+  margin: 0;
 }
 
 .footer__column-link {
@@ -346,14 +349,10 @@
   font-weight: normal;
 }
 
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
-}
-
 .footer__social-icon {
   margin-right: 10px;
   width: 16px;
   height: 16px;
 }
+
 
