@@ -1,4 +1,5 @@
 .table_theme_dark {
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 80px;
 }
